@@ -16,6 +16,8 @@ label.comment_link {
 	background-color: #fff; 
 } /* Hacky hack hax */
 
+abbr.livetimestamp::before { content: " · "; }
+
 
 /* 
 Guide to selectors targeted
