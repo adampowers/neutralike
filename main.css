@@ -13,8 +13,8 @@ label.comment_link {
 	background-color: #fff; 
 } /* Hacky hack hax */
 
-abbr.livetimestamp::before,
-a[data-reactid*="$removePreview"] { content: " · "; }
+a[data-reactid*="$removePreview"]::before,
+a.UFIReplyLink::after { content: " · "; }
 
 
 /* 
