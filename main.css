@@ -3,10 +3,7 @@ a.UFIBlingBox > span:first-child,
 li.UFILikeSentence,
 .UFICommentLikeButton,
 .UFICommentLikeIcon,
-span[data-reactid*="$MIDDOT"] 
-{
-	display: none;
-}
+span[data-reactid*="$MIDDOT"] { display: none; }
 
 i.mls { margin-left: 0; }
 .UFIBlingBoxText { margin-right: 5px; }
@@ -16,7 +13,8 @@ label.comment_link {
 	background-color: #fff; 
 } /* Hacky hack hax */
 
-abbr.livetimestamp::before { content: " · "; }
+abbr.livetimestamp::before,
+a[data-reactid*="$removePreview"] { content: " · "; }
 
 
 /* 
