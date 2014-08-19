@@ -1,0 +1,30 @@
+a.UFILikeLink,
+a.UFIBlingBox > span:first-child,
+li.UFILikeSentence,
+.UFICommentLikeButton,
+.UFICommentLikeIcon,
+span[data-reactid*="$MIDDOT"] 
+{
+	display: none;
+}
+
+i.mls { margin-left: 0; }
+.UFIBlingBoxText { margin-right: 5px; }
+
+label.comment_link { 
+	margin-left: -6px; 
+	background-color: #fff; 
+} /* Hacky hack hax */
+
+
+/* 
+Guide to selectors targeted
+
+a.UFILikeLink							"Like" link on posts.
+a.UFIBlingBox > span:first-child		The number of likes in the "BlingBox"
+li.UFILikeSentence						"X and N people like this."
+.UFICommentLikeIcon						Appears on every comment.
+.UFICommentLikeButton					Shows how many people have liked a comment.
+span[data-reactid*="$MIDDOT"] 			Spans with the "·" character, used between like elements.
+
+*/

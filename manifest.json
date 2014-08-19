@@ -1,0 +1,15 @@
+{
+  "name": "Neutralikey for Facebook",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension purges 'Like' functionality from Facebook.",
+  "homepage_url": "http://powe.rs/neutralikey",
+  "default_locale": "en",
+  "permissions": [ "https://www.facebook.com/*" ],
+  "content_scripts": [
+    {
+      "matches": [ "https://www.facebook.com/*" ],
+      "css": [ "main.css" ]
+    }
+  ]
+}
