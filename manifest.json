@@ -15,7 +15,7 @@
     {
       "matches": [ "https://www.facebook.com/*" ],
       "css": [ "main.css" ],
-      "js": [ "jquery.min.js", "mutation-summary.js", "main.js" ],
+      "js": [ "jquery.min.js", "main.js" ],
       "run_at": "document_end"
     }
   ],
