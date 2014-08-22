@@ -1,6 +1,6 @@
 {
   "name": "Neutralike for Facebook",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "manifest_version": 2,
   "description": "This extension purges 'Like' functionality from Facebook.",
   "homepage_url": "http://github.com/adampowers/neutralike",
