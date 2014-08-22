@@ -16,15 +16,30 @@ label.comment_link {
 a[data-reactid*="$removePreview"]::before,
 a.UFIReplyLink::after { content: " · "; }
 
+span#requestsCountValue,
+span#notificationsCountValue,
+span#mercurymessagesCountValue,
+.fbChatTab span {
+	background-image: none;
+	background-color: #48649f;;
+}
+
+
 
 /* 
 Guide to selectors targeted
 
 a.UFILikeLink							"Like" link on posts.
-a.UFIBlingBox > span:first-child		The number of likes in the "BlingBox"
+a.UFIBlingBox > span:first-child		The number of likes in the "BlingBox".
 li.UFILikeSentence						"X and N people like this."
 .UFICommentLikeIcon						Appears on every comment.
-.UFICommentLikeButton					Shows how many people have liked a comment.
-span[data-reactid*="$MIDDOT"] 			Spans with the "·" character, used between like elements.
+.UFICommentLikeButton					"Thumbs up" button that shows how many people have liked a comment.
+span[data-reactid*="$MIDDOT"] 			Spans with the "·" character, used in e.g., Like · Comment.
+label.comment_link 						The "Comment" link on every post.
+
+span#requestsCountValue					Notification badge for friend requests.
+span#notificationsCountValue			Notification badge for notification center.
+span#mercurymessagesCountValue			Notification badge for messages.
+.fbChatTab span 						Notification badge on chats.
 
 */
