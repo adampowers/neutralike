@@ -1,6 +1,6 @@
 {
   "name": "Neutralike for Facebook",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "manifest_version": 2,
   "description": "This extension purges 'Like' functionality from Facebook.",
   "homepage_url": "http://github.com/adampowers/neutralike",
@@ -10,7 +10,7 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "permissions": [ "tabs", "https://www.facebook.com/*" ],
+  "permissions": [ "https://www.facebook.com/*" ],
   "content_scripts": [
     {
       "matches": [ "https://www.facebook.com/*" ],
