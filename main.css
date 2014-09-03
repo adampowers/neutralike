@@ -24,7 +24,28 @@ span#mercurymessagesCountValue,
 	background-color: #48649f;;
 }
 
+.scienceCTA {
+	background: #fff;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
 
+	margin-bottom: 10px;
+	padding: 10px;
+
+}
+.scienceCTA span { color: rgb(20, 24, 35); font-family: Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif; font-size: 14px; }
+.scienceCTA .dot { color: #9197a3; }
+
+.scienceCTA .comment_link {
+	margin-left: 0px;
+}
+
+.scienceCTA #surveyForm {
+	margin-top: 1em;
+	display: none;
+}
 
 /* 
 Guide to selectors targeted

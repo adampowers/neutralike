@@ -1,3 +1,35 @@
+if ($.cookie('alert-box') != 'closed') {
+	$('<div></div>')
+		.addClass("scienceCTA fade in")
+		.html('\
+			<span>Thanks for using Neutralike! I\'m trying to gather data on how it affects Facebook usage. Will you help me out by filling out a short survey?</span><br/><br/>\
+			<label class="uiLinkButton comment_link" title="It\'s a real short survey, I swear.">\
+				<input id="nlsciYes" class="uiLinkButtonInput" type="button" value="I\'ll help, FOR SCIENCE">\
+			</label><span class="dot">&nbsp;·&nbsp;</span>\
+	 		<label class="uiLinkButton comment_link" title="And I won\'t, promise.">\
+				<input id="nlsciNo" class="uiLinkButtonInput" type="button" value="No thanks, and don\'t ask me again">\
+			</label>\
+			<br/><iframe id="surveyForm" src="https://docs.google.com/forms/d/1X5t97D5ohM9SCjyXiBUQRLD7laq8pWJwaKEPsrQlVJE/viewform?embedded=true" width="480" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>\
+			')
+		.prependTo("#contentArea");
+
+	$("#nlsciYes").on('click',function(){
+		$("#surveyForm").show("slow");
+
+		$('#surveyForm').load(function(){
+			$("#surveyForm").delay(1000).hide('slow');
+			$(".scienceCTA #nlsciYes").hide();
+			$(".scienceCTA .dot").hide();
+			$(".scienceCTA #nlsciNo").attr("value","Dismiss");
+			$(".scienceCTA span").html("Thanks for your survey response! We won't ask you again.");
+		});
+	});
+
+	$("#nlsciNo").on('click',function(){
+    	$.cookie('alert-box', 'closed', { path: '/' });
+		$(".scienceCTA").hide('slow');
+	});
+}
 
 $("a.jewelButton[name='notifications']").on('click', function() {
 
